@@ -1,0 +1,26 @@
+{
+  "id": "000005",
+	"posted_by": "user116",
+	"posted_timestamp": 1741040819,
+	"posted_mbti": "ISFJ",
+	"posted_gender": "male",
+	"category": "work",
+	"target_mbti": [
+		"INTP",
+		"INTJ"
+	],
+	"target_gender": [
+		"male"
+	],
+	"title": "현재 직업과 만족도",
+	"description": "",
+	"userInput": true,
+	"options": [
+		{
+			"id": 0,
+			"choice": "",
+			"allowMultiple": false
+		}
+	],
+	"enableCommenting": true
+}

@@ -1,0 +1,40 @@
+{
+  "id": "000001",
+	"posted_by": "user111",
+	"posted_timestamp": 1741040819,
+	"category": "relationship",
+	"posted_mbti": "INTJ",
+	"posted_gender": "male",
+	"target_mbti": [
+		"ENTJ"
+	],
+	"target_gender": [
+		"female"
+	],
+	"title": "발렌타인 데이 날 받고싶은 선물은?",
+	"description": "나 인트제 도돌인데 엔티제들 발렌타인때 뭐 받고싶냐? 초콜렛? 로이스 초콜렛??",
+	"userInput": false,
+	"options": [
+		{
+			"id": 0,
+			"choice": "초콜렛 & 꽃다발",
+			"allowMultiple": false
+		},
+		{
+			"id": 1,
+			"choice": "직접만든 선물",
+			"allowMultiple": false
+		},
+		{
+			"id": 2,
+			"choice": "편지",
+			"allowMultiple": false
+		},
+		{
+			"id": 3,
+			"choice": "그 외",
+			"allowMultiple": false
+		}
+	],
+	"enableCommenting": true
+}

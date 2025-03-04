@@ -1,0 +1,61 @@
+{
+  "id": "000004",
+	"posted_by": "user115",
+	"posted_timestamp": 1741040819,
+	"posted_mbti": "ISTJ",
+	"posted_gender": "male",
+	"category": "relationship",
+	"target_mbti": [
+		"INTJ", "ENTJ", "INTP", "ENTP", "INFJ", "ENFJ", "INFP", "ENFP", "ISTJ", "ESTJ", "ISTP", "ESTP", "ISFJ", "ESFJ", "ISFP", "ESFP"
+	],
+	"target_gender": [
+		"female",
+		"male"
+	],
+	"title": "뒷담화가 가장 심한 엠비티아이는?",
+	"description": "앞에서도 티팍팍 내는 애들 빼고, 앞뒤 다른 애들. 뒷담화만 하는 유형은??",
+	"userInput": false,
+	"options": [
+		{
+			"id": 0,
+			"choice": "esfj",
+			"allowMultiple": true
+		},
+		{
+			"id": 1,
+			"choice": "isfj",
+			"allowMultiple": true
+		},
+		{
+			"id": 2,
+			"choice": "isfp",
+			"allowMultiple": true
+		},
+		{
+			"id": 3,
+			"choice": "esfp",
+			"allowMultiple": true
+		},
+		{
+			"id": 4,
+			"choice": "infp",
+			"allowMultiple": true
+		},
+		{
+			"id": 5,
+			"choice": "infj",
+			"allowMultiple": true
+		},
+		{
+			"id": 6,
+			"choice": "esfj",
+			"allowMultiple": true
+		},
+		{
+			"id": 7,
+			"choice": "intp",
+			"allowMultiple": true
+		}
+	],
+	"enableCommenting": true
+}

@@ -1,0 +1,29 @@
+{
+  "id": "000003",
+	"posted_by": "user114",
+	"posted_timestamp": 1741040819,
+	"posted_mbti": "ISFP",
+	"posted_gender": "female",
+	"category": "childcare",
+	"target_mbti": [
+		"INTJ",
+		"INTP",
+		"ISTP",
+		"ISTJ"
+	],
+	"target_gender": [
+		"male",
+		"female"
+	],
+	"title": "예민한 초딩: 친구들과 어울리지 못하고 항상 엄마 아빠 옆에만 붙어 있는 아이 어떻게 도와줄 수 있을까요?",
+	"description": "",
+	"userInput": true,
+	"options": [
+		{
+			"id": 0,
+			"choice": "",
+			"allowMultiple": false
+		}
+	],
+	"enableCommenting": true
+}

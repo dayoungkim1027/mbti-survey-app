@@ -1,0 +1,26 @@
+{
+  "id": "000002",
+	"posted_by": "user112",
+	"posted_timestamp": 1741040819,
+	"posted_mbti": "ISFP",
+	"posted_gender": "female",
+	"category": "relationship",
+	"target_mbti": [
+		"ESTJ",
+		"ENTJ"
+	],
+	"target_gender": [
+		"male"
+	],
+	"title": "극혐하는 여자 스타일은?",
+	"description": "외모빼고 성향만 봤을때 이런 여자는 극혐이다 누구?",
+	"userInput": true,
+	"options": [
+		{
+			"id": 0,
+			"choice": "",
+			"allowMultiple": false
+		}
+	],
+	"enableCommenting": true
+}

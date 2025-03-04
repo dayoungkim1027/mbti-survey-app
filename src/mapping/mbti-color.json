@@ -1,0 +1,21 @@
+{
+	"INTP": "#F0D9FF",
+	"INTJ": "#CAB8FF",
+	"ENTP": "#BFA2DB",
+	"ENTJ": "#BA94D1",
+
+	"INFP": "#D8EFD3",
+	"INFJ": "#BFF6C3",
+	"ENFP": "#B0EBB4",
+	"ENFJ": "#ACE1AF",
+
+	"ISTP": "#FFE6A9",
+	"ISTJ": "#FADFA1",
+	"ESTP": "#FADA7A",
+	"ESTJ": "#FFD966",
+
+	"ISFP": "#E3F4F4",
+	"ISFJ": "#D2E9E9",
+	"ESFP": "#C4DFDF",
+	"ESFJ": "#AAE3E2"
+}

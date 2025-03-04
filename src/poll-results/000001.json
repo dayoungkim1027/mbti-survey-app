@@ -1,0 +1,57 @@
+{
+	"id": "000001",
+	"pollId": "000001",
+	"userInput": false,
+	"data": [
+		{
+			"userId": "user111",
+			"value": 1
+		},
+		{
+			"userId": "user112",
+			"value": 3
+		},
+		{
+			"userId": "user131",
+			"value": 2
+		},
+		{
+			"userId": "user121",
+			"value": 2
+		},
+		{
+			"userId": "user711",
+			"value": 3
+		},
+		{
+			"userId": "user521",
+			"value": 1
+		},
+		{
+			"userId": "user140",
+			"value": 3
+		}
+	],
+	"results": [
+		{
+			"option": 0,
+			"choice": "초콜렛 & 꽃다발",
+			"count": 0
+		},
+		{
+			"option": 1,
+			"choice": "직접만든 선물",
+			"count": 2
+		},
+		{
+			"option": 2,
+			"choice": "편지",
+			"count": 2
+		},
+		{
+			"option": 3,
+			"choice": "그 외",
+			"count": 3
+		}
+	]
+}
