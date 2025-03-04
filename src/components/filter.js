@@ -33,7 +33,7 @@ const Button = styled.button`
 `
 
 function Filter() {
-	const mbtis = ["#intj", "#entj", "#intp", "#entp", "#infj", "#enfj", "#infp", "#enfp", "#istj", "#estj", "#istp", "#estp", "#isfj", "#esfj", "#isfp", "#esfp"];
+	// const mbtis = ["#intj", "#entj", "#intp", "#entp", "#infj", "#enfj", "#infp", "#enfp", "#istj", "#estj", "#istp", "#estp", "#isfj", "#esfj", "#isfp", "#esfp"];
 	
 	return (
 		<FilterContainer>

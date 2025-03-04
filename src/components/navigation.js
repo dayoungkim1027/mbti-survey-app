@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { ReactComponent as MenuIcon } from '../assets/menu.svg';
 import styled from 'styled-components';
 import PlusIcon from '../assets/plus.png';
 

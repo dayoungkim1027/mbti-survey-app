@@ -1,5 +1,5 @@
 import Navigation from './components/navigation'
-import { Route, Routes, useParams } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './views/home'
 import styled from 'styled-components';
 import Poll from './views/poll';

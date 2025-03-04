@@ -2,10 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { getPolls } from '../api/getPolls';
 import Audience from './audience'
-import ArrowIcon from '../assets/arrow.png';
 import LikeIcon from '../assets/heart.png';
-import LikedIcon from '../assets/heart-filled.png';
-
 
 const PollsContainer = styled.div`
 	padding: 0;
@@ -37,22 +34,17 @@ const SocialContainer = styled.div`
 	padding: .5rem 1.5rem 1rem;
 `
 
-const ArrowImage = styled.img`
-	width: 10px;
-	margin: 0 .3rem;
-`
-
 const Like = styled.img`
 	vertical-align: middle;
 	margin-left: auto;
   order: 2;
 `
 
-const Liked = styled.img`
-	vertical-align: middle;
-	margin-left: auto;
-  order: 2;
-`
+// const Liked = styled.img`
+// 	vertical-align: middle;
+// 	margin-left: auto;
+//   order: 2;
+// `
 
 function Polls() {
 	
