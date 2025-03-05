@@ -23,10 +23,11 @@ const PercentageLabel = styled.label`
 	right: 15px;
 `
 
-function PollBox(
-	data
-) {
-	const { label, percentage, winner } = data;
+function PollBox({
+	label,
+	percentage,
+	winner
+}) {
 	return (
 		<DefaultBox>
 			<OptionBox style={{ 'backgroundColor': winner ? '#fa5352' : '#B7B7B7' , 'width': `${percentage}%` }}/>

@@ -15,9 +15,10 @@ const Tag = styled.span`
 `
 
 
-function Audience(
-	data
-) {
+function Audience({
+	postedMbti,
+	targetMbti
+}) {
 	
 	function getCssColor(mbti) {
 		return colorMapping[mbti];
@@ -25,13 +26,13 @@ function Audience(
 
   return (
 		<>
-			<Tag style={{'background-color': getCssColor(data.postedMbti) }}>{data.postedMbti}</Tag>
+			<Tag style={{'background-color': getCssColor(postedMbti) }}>{postedMbti}</Tag>
 			
 			<ArrowImage src={ArrowIcon} />
-			{data.targetMbti.length === 16 && (
+			{targetMbti.length === 16 && (
 				<Tag style={{'background-color': 'none' }}>All</Tag>
 			)}
-			{data.targetMbti.length !== 16 && data.targetMbti.map(target => (
+			{targetMbti.length !== 16 && targetMbti.map(target => (
 				<Tag style={{'background-color': getCssColor(target) }}>{target}</Tag>
 			))}
 		</>

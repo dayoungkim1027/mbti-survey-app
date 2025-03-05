@@ -35,10 +35,10 @@ const LiveStatus = styled.span`
 	margin-right: .5rem;
 `
 
-function ResultBox(
-	poll
-) {
-	const data = getPollResults(poll.pollId);
+function ResultBox({
+	pollId
+}) {
+	const data = getPollResults(pollId);
 	
 	let totalCount = 0;
 	data.results.map((result) => totalCount += result.count);
