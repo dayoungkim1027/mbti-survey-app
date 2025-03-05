@@ -7,36 +7,43 @@
 		{
 			"userId": "abe111",
 			"type": "ISTP", 
+			"gender": "male",
 			"value": "나는 외우는게 제일 쉽던데"
 		},
 		{
 			"userId": "user112",
 			"type": "ENFP", 
+			"gender": "female",
 			"value": "나는 둘 다 잘하는데"
 		},
 		{
 			"userId": "302lef",
 			"type": "INTP", 
+			"gender": "male",
 			"value": "외우는것 보단 이해하는게 좋음."
 		},
 		{
 			"userId": "aefli3",
-			"type": "ENTP", 
+			"type": "INTJ", 
+			"gender": "female",
 			"value": "무조건 읽고 또 읽고, 이해할 떄 까지 읽으세요"
 		},
 		{
 			"userId": "bxcow3",
 			"type": "ISFP", 
+			"gender": "female",
 			"value": "부럽다 공부 잘해서"
 		},
 		{
 			"userId": "zxwfowie",
 			"type": "INFJ", 
+			"gender": "male",
 			"value": "책 읽는 습관을 기르면 공부는 잘 하게 됩니다"
 		},
 		{
 			"userId": "wygw33",
 			"type": "ENTJ", 
+			"gender": "female",
 			"value": "공부가 세상에서 제일 쉬움"
 		}
 	],

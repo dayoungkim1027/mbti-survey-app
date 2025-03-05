@@ -6,32 +6,38 @@
 	"data": [
 		{
 			"userId": "23tgwes",
-			"type": "ENTJ", 
+			"type": "INTP",
+			"gender": "male",
 			"value": "회사직원. 반복적인 업무 너무 싫음"
 		},
 		{
 			"userId": "jwherag",
-			"type": "ENTJ", 
+			"type": "INTJ", 
+			"gender": "male",
 			"value": "개발자/프리렌서 잘 맞습니다"
 		},
 		{
 			"userId": "qv2ta",
-			"type": "ISTJ", 
+			"type": "INTJ", 
+			"gender": "male",
 			"value": "개발자22"
 		},
 		{
 			"userId": "62y34ha",
-			"type": "INTJ", 
+			"type": "INTP", 
+			"gender": "male",
 			"value": "리서치, 할만합니다"
 		},
 		{
 			"userId": "bdfqaw4",
-			"type": "ENTP", 
+			"type": "INTP", 
+			"gender": "male",
 			"value": "전업주부인데 최악임. 육아 나랑 안맞음."
 		},
 		{
 			"userId": "zsdvee",
-			"type": "INFP", 
+			"type": "INTP", 
+			"gender": "male",
 			"value": "백수입니다, 잘 맞습니다"
 		}
 	],

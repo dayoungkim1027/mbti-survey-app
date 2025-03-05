@@ -5,11 +5,15 @@
 	"status": "Live",
 	"data": [
 		{
-			"userId": "user111",
+			"userId": "bawefwe",
+			"type": "INTJ",
+			"gender": "femle",
 			"value": "평소에 엄마가 자주 옆에 없었나요? 집안에서 안정감이 들어야할듯 합니다."
 		},
 		{
-			"userId": "user112",
+			"userId": "vawre54",
+			"type": "INTP",
+			"gender": "female",
 			"value": "예민하다는 것은 둔하지 않고 눈치가 빠른겁니다. N성향일듯. 티인지 에프인지가 관건일듯."
 		}
 	],

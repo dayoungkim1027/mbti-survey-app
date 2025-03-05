@@ -29,7 +29,7 @@ const Image = styled.img`
 
 function Navigation() {
 	const profile = {
-		mbti: 'intj',
+		type: 'intj',
 		gender: 'male'
 	}
 
@@ -37,14 +37,14 @@ function Navigation() {
 		console.log('plus clicked')
 	}
 
-	const userDoc = useSelector((state) => state.user.data);
+	const userDoc = useSelector((state) => state.user.data).user;
   const dispatch = useDispatch();
 
-  const [user, setProfile] = useState(userDoc.mbti);
+  const [user, setProfile] = useState(userDoc);
 
 	const logInUser = () => {
-    dispatch(setUser({ id: Date.now(), user: profile.mbti }));
-		setProfile(profile.mbti)
+    dispatch(setUser({ id: Date.now(), user: profile}));
+		setProfile(profile)
   };
 
 	const logOutUser = () => {
@@ -73,7 +73,7 @@ function Navigation() {
 			
 			{user && (
 				<Profile onClick={logOutUser}>
-					<Image src={`/mbti-avatars/${profile.mbti}-${profile.gender[0]}.png`} alt="Avatar"/>
+					<Image src={`/mbti-avatars/${userDoc.type}-${userDoc.gender[0]}.png`} alt="Avatar"/>
 				</Profile>
 			)}
 		</NavigationContainer>

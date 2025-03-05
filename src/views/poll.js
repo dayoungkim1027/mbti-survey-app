@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useSelector, useDispatch } from 'react-redux';
+import { setUser } from '../store/userSlice';
+import ProfileIcon from '../assets/profile.png';
 import { useLocation } from 'react-router-dom';
 import Audience from '../components/audience';
 import ResultBox from '../components/result-box';
@@ -53,14 +56,18 @@ const SubmitButton = styled.button`
   padding: .5rem 1rem;
 `
 
-const TextInput = styled.textarea`
-  border: 1px solid #AAC4FF;
+const TextInput = styled.input`
+  border: none;
   border-radius: 0;
-  margin-bottom: 1rem;
-
-  &:hover {
+  margin: .8rem 1rem 0 0;
+  width: 100%;
+  
+  &:focus {
     border-radius: 0;
-    border: 1px solid #554994;
+  }
+
+  &:focus-visible {
+    border-radius: 0;
   }
 `
 
@@ -84,35 +91,73 @@ const UserId = styled.p`
   color: #94969b;
 `
 
+const UserInfo = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 const Comment = styled.p`
   font-size: 14px;
-  padding: .8rem; 
+  margin: .3rem 0 .5rem; 
 `
 
 const CommentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: .7rem 0;
+`
+
+const TypeLabel = styled.label`
+  font-size: 12px;
+  margin-right: .5rem;
+  color: #898AA6;
+`
+
+const Avatar = styled.img`
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: .8rem 1rem 0 0;
+`
+
+const BlockContainer = styled.div`
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #ececec;
 `
 
-const UserInfo = styled.div`
+const CommentsHeading = styled.h4`
+  margin-bottom: 0.7rem;
+`
+
+const InputContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 0.6rem;
+  flex-direction: row;
+  margin-bottom: 1rem;
 `
-
-const TypeLabel = styled.label`
-  font-size: 12px;
-`
-
 
 function Poll() {
+  const profile = {
+		type: 'intj',
+		gender: 'male'
+	}
+
 	const location = useLocation();
   const { poll } = location.state;
   const [selectedOption, setSelectedOption] = useState('');
   const [userInput, setUserInput] = useState('');
   const [userSubmittedResponse, setUserSubmittedResponse] = useState(false);
+
+  // // get user login info
+  const userDoc = useSelector((state) => state.user.data).user;
+  const dispatch = useDispatch();
+  const [user, setProfile] = useState(userDoc);
+	const logInUser = () => {
+    dispatch(setUser({ id: Date.now(), user: profile}));
+		setProfile(profile)
+  };
+
 
   const onRadioButtonChange = (event) => {
     setSelectedOption(event.target.value);
@@ -156,22 +201,42 @@ function Poll() {
               
           ))}
           
+
+          {poll.userInput && responses && (
+            <CommentsHeading>Comments</CommentsHeading>
+          )}
+
           <Comments>
             {poll.userInput && responses &&
               responses.map((response) => (
-                <CommentContainer>
-                  <UserInfo>
-                    <TypeLabel>{response.type}</TypeLabel>
-                    <UserId>{`${response.userId[0]}*****`}</UserId>
-                  </UserInfo>
-                  <Comment>{response.value}</Comment>
-                </CommentContainer>
+                <BlockContainer>
+                  <Avatar src={`/mbti-avatars/${response.type}-${response.gender[0]}.png`} alt="Profile image"/>
+                  <CommentContainer>
+                    <UserInfo>
+                      <TypeLabel>{response.type} </TypeLabel>
+                      <UserId>{`${response.userId[0]}*****`}</UserId>
+                    </UserInfo>
+                    <Comment>{response.value}</Comment>
+                  </CommentContainer>
+                </BlockContainer>
             ))}
           </Comments>
 
-          {poll.userInput && (
-            <TextInput type="text" value={userInput} onChange={onUserInputChange}></TextInput>
+          
+          {poll.userInput && user && (
+            <InputContainer>
+              <Avatar src={`/mbti-avatars/${userDoc.type}-${userDoc.gender[0]}.png`} alt="Profile image"/>
+              <TextInput type="text" placeholder="Add a comment" value={userInput} onChange={onUserInputChange}></TextInput>
+            </InputContainer>
           )}
+
+          {poll.userInput && !userDoc && (
+            <InputContainer>
+              <Avatar src={ProfileIcon} alt="Profile" onClick={logInUser}/>
+              <TextInput type="text" placeholder="Add a comment" value={userInput} onChange={onUserInputChange}></TextInput>
+            </InputContainer>
+          )}
+
           <SubmitButton onClick={onPollSubmit}>SUBMIT</SubmitButton>
 
         </PollBox>

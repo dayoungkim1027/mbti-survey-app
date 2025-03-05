@@ -5,31 +5,38 @@
 	"status": "Live",
 	"data": [
 		{
-			"userId": "user111",
+			"userId": "aebfvwe",
+			"type": "ISTP",
 			"value": 1
 		},
 		{
-			"userId": "user112",
+			"userId": "ewagsd",
+			"type": "ISFJ",
 			"value": 7
 		},
 		{
-			"userId": "user131",
+			"userId": "fersde",
+			"type": "INTJ",
 			"value": 0
 		},
 		{
-			"userId": "user121",
+			"userId": "xcbvfr",
+			"type": "ISFJ",
 			"value": 2
 		},
 		{
-			"userId": "user711",
+			"userId": "awesrdf",
+			"type": "INTJ",
 			"value": 3
 		},
 		{
-			"userId": "user521",
+			"userId": "jtydrf",
+			"type": "ISTP",
 			"value": 1
 		},
 		{
-			"userId": "user140",
+			"userId": "awgebef",
+			"type": "INFP",
 			"value": 7
 		}
 	],

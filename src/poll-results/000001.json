@@ -6,38 +6,52 @@
 	"data": [
 		{
 			"userId": "user111",
-			"value": 1
+			"type": "ENTP", 
+			"gender": "female",
+			"value": 0
 		},
 		{
 			"userId": "user112",
-			"value": 3
-		},
-		{
-			"userId": "user131",
+			"type": "INTP",
+			"gender": "female",
 			"value": 2
 		},
 		{
+			"userId": "user131",
+			"type": "INTP",
+			"gender": "female",
+			"value": 1
+		},
+		{
 			"userId": "user121",
+			"type": "INTJ",
+			"gender": "female",
 			"value": 2
 		},
 		{
 			"userId": "user711",
-			"value": 3
+			"type": "ENTJ",
+			"gender": "female",
+			"value": 0
 		},
 		{
 			"userId": "user521",
+			"type": "INTP",
+			"gender": "female",
 			"value": 1
 		},
 		{
 			"userId": "user140",
-			"value": 3
+			"type": "ENTJ",
+			"gender": "female",
+			"value": 2
 		}
 	],
 	"results": [
 		{
 			"option": 0,
 			"choice": "초콜렛 & 꽃다발",
-			"count": 0
+			"count": 2
 		},
 		{
 			"option": 1,
@@ -47,12 +61,12 @@
 		{
 			"option": 2,
 			"choice": "편지",
-			"count": 2
+			"count": 3
 		},
 		{
 			"option": 3,
 			"choice": "그 외",
-			"count": 3
+			"count": 0
 		}
 	]
 }

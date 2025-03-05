@@ -6,13 +6,13 @@
 	"posted_mbti": "INTJ",
 	"posted_gender": "male",
 	"target_mbti": [
-		"ENTJ"
+		"N", "T"
 	],
 	"target_gender": [
 		"female"
 	],
 	"title": "발렌타인 데이 날 받고싶은 선물은?",
-	"description": "나 인트제 도돌인데 엔티제들 발렌타인때 뭐 받고싶냐? 초콜렛? 로이스 초콜렛??",
+	"description": "나 인트제 도돌인데 NT인분들 발렌타인때 뭐 받고싶나요? 초콜렛? 로이스 초콜렛??",
 	"userInput": false,
 	"options": [
 		{
