@@ -139,7 +139,7 @@ const InputContainer = styled.div`
 
 function Poll() {
   const profile = {
-		type: 'intj',
+		type: 'INTJ',
 		gender: 'male'
 	}
 

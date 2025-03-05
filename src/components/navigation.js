@@ -29,7 +29,7 @@ const Image = styled.img`
 
 function Navigation() {
 	const profile = {
-		type: 'intj',
+		type: 'INTJ',
 		gender: 'male'
 	}
 
