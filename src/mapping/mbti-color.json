@@ -15,7 +15,22 @@
 	"ESTJ": "#FFD966",
 
 	"ISFP": "#E3F4F4",
-	"ISFJ": "#D2E9E9",
+	"ISFJ": "#C8F2EF",
 	"ESFP": "#C4DFDF",
-	"ESFJ": "#AAE3E2"
+	"ESFJ": "#AAE3E2",
+
+	"I": "#B4EBE6",
+	"E": "#80CBC4",
+	"N": "#FFCF81",
+	"S": "#FADA7A",
+	"T": "#95D2B3",
+	"F": "#B0EBB4",
+	"P": "#AC87C5",
+	"J": "#E0AED0",
+
+	"NT": "#CAB8FF",
+	"NF": "#BFF6C3",
+	"ST": "#FADFA1",
+	"SF": "#C8F2EF"
+
 }

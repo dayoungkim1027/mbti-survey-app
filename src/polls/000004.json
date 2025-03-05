@@ -6,7 +6,14 @@
 	"posted_gender": "male",
 	"category": "relationship",
 	"target_mbti": [
-		"INTJ", "ENTJ", "INTP", "ENTP", "INFJ", "ENFJ", "INFP", "ENFP", "ISTJ", "ESTJ", "ISTP", "ESTP", "ISFJ", "ESFJ", "ISFP", "ESFP"
+		"I",
+		"E",
+		"N",
+		"S",
+		"T",
+		"F",
+		"P",
+		"J"
 	],
 	"target_gender": [
 		"female",

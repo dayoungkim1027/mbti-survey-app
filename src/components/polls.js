@@ -40,12 +40,6 @@ const Like = styled.img`
   order: 2;
 `
 
-// const Liked = styled.img`
-// 	vertical-align: middle;
-// 	margin-left: auto;
-//   order: 2;
-// `
-
 function Polls() {
 	
 	const polls = getPolls();

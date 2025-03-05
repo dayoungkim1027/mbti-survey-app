@@ -6,8 +6,14 @@
 	"posted_gender": "female",
 	"category": "relationship",
 	"target_mbti": [
-		"ESTJ",
-		"ENTJ"
+		"I",
+		"E",
+		"N",
+		"S",
+		"T",
+		"F",
+		"P",
+		"J"
 	],
 	"target_gender": [
 		"male"

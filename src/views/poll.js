@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import Audience from '../components/audience';
 import ResultBox from '../components/result-box';
+import { getPollResults } from '../api/getPollResults';
 
 const PollContainer = styled.div`
   padding: 0;
@@ -72,6 +73,37 @@ const AudienceContainer = styled.div`
   display: flex;
 `
 
+const Comments = styled.div`
+  border-top: 1px solid #ececec;
+  padding: 0;
+`
+
+const UserId = styled.p`
+  font-size: 14px;
+`
+
+const Comment = styled.p`
+  font-size: 14px;
+  padding: .8rem; 
+`
+
+const CommentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ececec;
+`
+
+const UserInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const TypeLabel = styled.label`
+  font-size: 10px;
+  color: #94969b;
+`
+
+
 function Poll() {
 	const location = useLocation();
   const { poll } = location.state;
@@ -93,6 +125,12 @@ function Poll() {
     }, 100);
   };
 
+  // for user input polls -- show those comments on top
+  let responses = [];
+  if (poll.userInput) {
+    responses = getPollResults(poll.id).data;
+  }
+  
 	return (
     <PollContainer>
       <HeadingContainer>
@@ -114,10 +152,23 @@ function Poll() {
             </OptionLabel>
               
           ))}
+          
+          <Comments>
+            {poll.userInput && responses &&
+              responses.map((response) => (
+                <CommentContainer>
+                  <UserInfo>
+                    <TypeLabel>{response.type}</TypeLabel>
+                    <UserId>{`${response.userId[0]}*****`}</UserId>
+                  </UserInfo>
+                  <Comment>{response.value}</Comment>
+                </CommentContainer>
+            ))}
+          </Comments>
+
           {poll.userInput && (
             <TextInput type="text" value={userInput} onChange={onUserInputChange}></TextInput>
           )}
-
           <SubmitButton onClick={onPollSubmit}>SUBMIT</SubmitButton>
 
         </PollBox>
@@ -127,9 +178,9 @@ function Poll() {
       )}
 
       
-      {userSubmittedResponse && poll.userInput && (
-        <p>{}</p>
-      )}
+      {/* {userSubmittedResponse && poll.userInput && (
+        {}
+      )} */}
     </PollContainer>
 	)
 }

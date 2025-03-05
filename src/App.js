@@ -9,17 +9,13 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  
-
   return (
     <AppContainer>
-
-      <Navigation></Navigation>
+      <Navigation style={{'position': 'sticky', 'top': '0'}}></Navigation>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/polls/:state" element={<Poll/>}/>
       </Routes>
-
     </AppContainer>
   );
 }

@@ -8,7 +8,7 @@ const PlusImage = styled.img`
 	margin-right: .5rem;
 `
 const NavigationContainer = styled.div`
-	padding: 1.5rem 2rem;
+	padding: 1.5rem;
 	border-bottom: 1px solid #ececec;
 	display: flex;
 `;

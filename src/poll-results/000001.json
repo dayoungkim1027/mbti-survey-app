@@ -2,6 +2,7 @@
 	"id": "000001",
 	"pollId": "000001",
 	"userInput": false,
+	"status": "Live",
 	"data": [
 		{
 			"userId": "user111",
