@@ -191,6 +191,12 @@ function Poll() {
       <ContentContainer>
         <Content>{poll.description}</Content>
       </ContentContainer>
+
+      {/* <HashTagContainer>
+        <HashTag>{}</HashTag>
+      </HashTagContainer> */}
+
+
       {!userSubmittedResponse && (
         <PollBox>
           {!poll.userInput && poll.options.map(item => (
