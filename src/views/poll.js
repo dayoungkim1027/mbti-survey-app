@@ -225,7 +225,7 @@ function Poll() {
           
           {poll.userInput && user && (
             <InputContainer>
-              <Avatar src={`/mbti-avatars/${userDoc.type.toLowerCase()}-${userDoc.gender[0]}.png`} alt="Profile image"/>
+              <Avatar src={`/mbti-avatars/${userDoc.type}-${userDoc.gender[0]}.png`} alt="Profile image"/>
               <TextInput type="text" placeholder="Add a comment" value={userInput} onChange={onUserInputChange}></TextInput>
             </InputContainer>
           )}
