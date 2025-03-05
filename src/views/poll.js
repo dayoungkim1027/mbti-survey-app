@@ -13,7 +13,7 @@ const PollContainer = styled.div`
 `
 
 const HeadingContainer = styled.div`
-  padding: 1rem;
+  padding: 1.5rem;
   border-bottom: 1px solid #ececec;
 `
 
@@ -23,7 +23,7 @@ const Title = styled.h3`
 `
 
 const ContentContainer = styled.div`
-  padding: 1rem;
+  padding: 1.5rem;
 `
 
 const Content = styled.p`
@@ -33,7 +33,7 @@ const Content = styled.p`
 const PollBox = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
 `
 
 const RadioButton = styled.input`
@@ -61,7 +61,7 @@ const TextInput = styled.input`
   border-radius: 0;
   margin: .8rem 1rem 0 0;
   width: 100%;
-  
+
   &:focus {
     border-radius: 0;
   }
@@ -225,7 +225,7 @@ function Poll() {
           
           {poll.userInput && user && (
             <InputContainer>
-              <Avatar src={`/mbti-avatars/${userDoc.type}-${userDoc.gender[0]}.png`} alt="Profile image"/>
+              <Avatar src={`/mbti-avatars/${userDoc.type.toLowerCase()}-${userDoc.gender[0]}.png`} alt="Profile image"/>
               <TextInput type="text" placeholder="Add a comment" value={userInput} onChange={onUserInputChange}></TextInput>
             </InputContainer>
           )}
