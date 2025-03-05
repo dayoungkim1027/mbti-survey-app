@@ -79,7 +79,9 @@ const Comments = styled.div`
 `
 
 const UserId = styled.p`
-  font-size: 14px;
+  margin: 0;
+  font-size: 10px;
+  color: #94969b;
 `
 
 const Comment = styled.p`
@@ -96,11 +98,12 @@ const CommentContainer = styled.div`
 const UserInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-top: 0.6rem;
 `
 
 const TypeLabel = styled.label`
-  font-size: 10px;
-  color: #94969b;
+  font-size: 12px;
 `
 
 
