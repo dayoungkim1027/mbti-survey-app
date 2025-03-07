@@ -7,36 +7,49 @@
 		{
 			"userId": "aebfvwe",
 			"type": "ISTP",
+			"gender": "female",
 			"value": 1
 		},
 		{
 			"userId": "ewagsd",
 			"type": "ISFJ",
+			"gender": "female",
+			"value": 7
+		},
+		{
+			"userId": "vsdcw",
+			"type": "ISFJ",
+			"gender": "female",
 			"value": 7
 		},
 		{
 			"userId": "fersde",
 			"type": "INTJ",
+			"gender": "female",
 			"value": 0
 		},
 		{
 			"userId": "xcbvfr",
 			"type": "ISFJ",
+			"gender": "male",
 			"value": 2
 		},
 		{
 			"userId": "awesrdf",
 			"type": "INTJ",
+			"gender": "male",
 			"value": 3
 		},
 		{
 			"userId": "jtydrf",
 			"type": "ISTP",
+			"gender": "female",
 			"value": 1
 		},
 		{
 			"userId": "awgebef",
 			"type": "INFP",
+			"gender": "male",
 			"value": 7
 		}
 	],
