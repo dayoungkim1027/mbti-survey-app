@@ -248,7 +248,7 @@ function Poll() {
         </PollBox>
       )}
       {userSubmittedResponse && !poll.userInput && (
-        <ResultBox pollId={poll.id}/>
+        <ResultBox pollData={poll}/>
       )}
 
       

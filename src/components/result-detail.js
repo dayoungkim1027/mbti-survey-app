@@ -5,16 +5,14 @@ import { Pie } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export function ResultDetail({
-	summary
+	summary,
+	category
 }) {
-	console.log(summary)
-
-
 	const data = {
 		labels: summary.map((item) => item.type),
 		datasets: [
 			{
-				label: '# of Participantss',
+				label: 'Count',
 				data: summary.map((item) => item.count),
 				backgroundColor: [
 					'rgba(255, 99, 132, 0.2)',
