@@ -1,33 +1,41 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { ReactComponent as HamburgerMenu } from '../assets/menu.svg';
 import PlusIcon from '../assets/plus.png';
 import ProfileIcon from '../assets/profile.png';
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser, clearUser } from '../store/userSlice';
+import { getMenuStatus, setMenuStatus } from '../store/menuSlice';
 
 const PlusImage = styled.img`
 	width: 33px;
 `
 const NavigationContainer = styled.div`
-	padding: 1.5rem;
 	border-bottom: 1px solid #ececec;
 	display: flex;
 `;
 
 const Profile = styled.div`
-
+	padding: 1.5rem;
 `
 
 const Image = styled.img`
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
+	padding: 1.5rem 1.5rem 1.5rem 0;
 `
 
 const CreatePost = styled.div`
 	margin-left: auto;
 	margin-right: .5rem;
+	padding: 1.5rem 0 1.5rem;
+`
+
+const MenuContainer = styled.div`
+	padding: 1rem;
+	cursor: pointer;
 `
 
 function Navigation() {
@@ -40,13 +48,15 @@ function Navigation() {
 		console.log('plus clicked')
 	}
 
+	const dispatch = useDispatch();
 	const userDoc = useSelector((state) => state.user.data).user;
-  const dispatch = useDispatch();
+	const isMenuOpen = useSelector((state) => state.menuStatus.data).open;
 
   const [user, setProfile] = useState(userDoc);
+	const [showMenu, setShowMenu] = useState(isMenuOpen);
 
 	const logInUser = () => {
-    dispatch(setUser({ id: Date.now(), user: profile}));
+    dispatch(setUser({ id: Date.now(), user: profile }));
 		setProfile(profile)
   };
 
@@ -55,18 +65,28 @@ function Navigation() {
 		setProfile('')
   };
 
+	const onMenuClick = () => {
+		dispatch(setMenuStatus({ open: showMenu ? false : true }));
+		setShowMenu(showMenu ? false : true);
+	};
+
 	return (
 		<NavigationContainer>
+			<MenuContainer onClick={onMenuClick}>
+				<HamburgerMenu style={{'marginTop': '.7rem'}}/>
+			</MenuContainer>
 			<Link style={
 				{
 					'textDecoration': 'none',
 					'color': 'black',
 					'fontWeight': 'bolder',
-					'fontSize': '28px'
+					'fontSize': '28px',
+					'borderLeft': '1px solid #ececec',
+					'padding': '1.5rem'
 				}} to="/">
 				{/* <MenuIcon /> */}
 				{/* <h3>mbti Survey</h3> */}
-				moomool
+				mmool
 			</Link>
 			
 			<CreatePost>
