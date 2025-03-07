@@ -8,8 +8,6 @@ import { setUser, clearUser } from '../store/userSlice';
 
 const PlusImage = styled.img`
 	width: 33px;
-	margin-left: auto;
-	margin-right: .5rem;
 `
 const NavigationContainer = styled.div`
 	padding: 1.5rem;
@@ -25,6 +23,11 @@ const Image = styled.img`
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
+`
+
+const CreatePost = styled.div`
+	margin-left: auto;
+	margin-right: .5rem;
 `
 
 function Navigation() {
@@ -65,8 +68,13 @@ function Navigation() {
 				{/* <h3>mbti Survey</h3> */}
 				moomool
 			</Link>
-			<PlusImage src={PlusIcon} alt="ask question" onClick={onActionButtonClick}/>
 			
+			<CreatePost>
+				<Link to="/create-post">
+					<PlusImage src={PlusIcon} alt="ask question" onClick={onActionButtonClick}/>
+				</Link>
+			</CreatePost>
+
 			{!user && (
 				<Image src={ProfileIcon} alt="Profile" onClick={logInUser}/>
 			)}
