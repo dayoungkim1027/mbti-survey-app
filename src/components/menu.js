@@ -30,6 +30,10 @@ export const MenuItems = [
 		title: '아무거나',
 		path: '/others',
 	},
+	{
+		title: 'Ask Gemini',
+		path: '/askGemini'
+	}
 ];
 
 

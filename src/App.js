@@ -11,6 +11,7 @@ import RelationshipPolls from './views/relationship-polls';
 import ChildcarePolls from './views/childcare-polls';
 import OccupationPolls from './views/occupation-polls';
 import OtherPolls from './views/other-polls';
+import GeminiPage from './views/ask-gemini';
 
 const AppContainer = styled.div`
   overflow: scroll;
@@ -18,8 +19,6 @@ const AppContainer = styled.div`
 
 function App() {
   const isMenuOpen = useSelector((state) => state.menuStatus.data).open;
-
-  console.log('isMenuOpen: ', isMenuOpen);
   return (
     <AppContainer>
       <Navigation style={{'position': 'sticky', 'top': '0'}}></Navigation>
@@ -32,7 +31,7 @@ function App() {
         <Route path="/childcare" element={<ChildcarePolls/>}/>
         <Route path="/occupation" element={<OccupationPolls/>}/>
         <Route path="/others" element={<OtherPolls/>}/>
-      
+        <Route path="/askGemini" element={<GeminiPage/>}/>
       
       </Routes>
       

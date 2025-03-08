@@ -6,7 +6,7 @@ import ProfileIcon from '../assets/profile.png';
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser, clearUser } from '../store/userSlice';
-import { getMenuStatus, setMenuStatus } from '../store/menuSlice';
+import { setMenuStatus } from '../store/menuSlice';
 
 const PlusImage = styled.img`
 	width: 33px;
