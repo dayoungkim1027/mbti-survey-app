@@ -11,7 +11,7 @@ export default async function AskGemini(prompt) {
 		headers: {
 			'Content-Type': 'application/json',
 			'Authorization': apiKey,
-			'Access-Control-Allow-Origin': url
+			'Access-Control-Allow-Origin': '*'
 		},
 		body: JSON.stringify(data)
 	};
