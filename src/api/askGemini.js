@@ -2,7 +2,7 @@ export const apiUrl = process.env.BACKEND_URL;
 export const apiKey = process.env.API_KEY;
 
 export default async function AskGemini(prompt) {
-	const url = `${apiUrl}/ask/gemini`;
+	const url = 'https://survey-backend-h3b93sh56-dayoungkim1027s-projects.vercel.app/ask/gemini';
 	const data = {
 		text: prompt
 	}
