@@ -2,6 +2,7 @@ export const apiUrl = process.env.BACKEND_URL;
 export const apiKey = process.env.API_KEY;
 
 export default async function AskGemini(prompt) {
+	const url = 'https://dayoung-backend-nodejs.web.app/ask/gemini';
 	const data = {
 		text: prompt
 	}
@@ -16,7 +17,7 @@ export default async function AskGemini(prompt) {
 	};
 	
 	try {
-		const response = await fetch(`${apiUrl}/ask/gemini`, options);
+		const response = await fetch(url, options);
 		return await response.text();
 	}	catch (e) {
 		console.log('error')
