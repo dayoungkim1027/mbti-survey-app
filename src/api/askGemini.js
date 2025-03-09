@@ -10,7 +10,8 @@ export default async function AskGemini(prompt) {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
-			'Authorization': apiKey
+			'Authorization': apiKey,
+			'Access-Control-Allow-Origin': '*',
 		},
 		body: JSON.stringify(data),
 		// mode: 'cors'
