@@ -13,7 +13,7 @@ export default async function AskGemini(prompt) {
 			'Authorization': apiKey
 		},
 		body: JSON.stringify(data),
-		mode: 'cors'
+		// mode: 'cors'
 	};
 	
 	try {
