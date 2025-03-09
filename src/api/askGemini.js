@@ -11,8 +11,7 @@ export default async function AskGemini(prompt) {
 		const genAI = new GoogleGenerativeAI(geminiApiKey);
 		const model = genAI.getGenerativeModel({ model: modelName });
 		let result = await model.generateContent(prompt);
-		console.log('.result.response.text(): ', result.response.text());
-		return await result.response.text();
+		return result.response.text();
 	}	catch (e) {
 		console.log('error')
 	}
