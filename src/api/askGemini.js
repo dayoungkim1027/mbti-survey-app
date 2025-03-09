@@ -13,7 +13,7 @@ export default async function AskGemini(prompt) {
 	};
 	
 	try {
-		const response = await axios.put(url, data, headers);
+		const response = await axios.post(url, data, headers);
 		// const response = await fetch('https://survey-backend-six.vercel.app/ask/gemini', options);
 		if (!response.ok) {
 			throw new Error(`HTTP error! Status: ${response.status}`);
