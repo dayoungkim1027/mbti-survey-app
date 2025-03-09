@@ -17,7 +17,7 @@ export default async function AskGemini(prompt) {
 	};
 	
 	try {
-		const response = await fetch(`${url}/ask/gemini`, options);
+		const response = await fetch('https://survey-backend-six.vercel.app/ask/gemini', options);
 		if (!response.ok) {
 			throw new Error(`HTTP error! Status: ${response.status}`);
 		}
