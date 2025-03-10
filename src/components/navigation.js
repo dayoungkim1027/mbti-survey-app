@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ReactComponent as HamburgerMenu } from '../assets/menu.svg';
 import PlusIcon from '../assets/plus.png';
-import ProfileIcon from '../assets/profile.png';
+// import ProfileIcon from '../assets/profile.png';
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser, clearUser } from '../store/userSlice';
@@ -16,20 +16,20 @@ const NavigationContainer = styled.div`
 	display: flex;
 `;
 
-const Profile = styled.div`
-	padding: 1.5rem;
-`
+// const Profile = styled.div`
+// 	padding: 1.5rem;
+// `
 
-const Image = styled.img`
-	width: 32px;
-	height: 32px;
-	border-radius: 50%;
-	padding: 1.5rem 1.5rem 1.5rem 0;
-`
+// const Image = styled.img`
+// 	width: 32px;
+// 	height: 32px;
+// 	border-radius: 50%;
+// 	padding: 1.5rem 1.5rem 1.5rem 0;
+// `
 
 const CreatePost = styled.div`
 	margin-left: auto;
-	margin-right: .5rem;
+	margin-right: 1rem;
 	padding: 1.5rem 0 1.5rem;
 `
 
@@ -95,7 +95,7 @@ function Navigation() {
 				</Link>
 			</CreatePost>
 
-			{!user && (
+			{/* {!user && (
 				<Image src={ProfileIcon} alt="Profile" onClick={logInUser}/>
 			)}
 			
@@ -103,7 +103,7 @@ function Navigation() {
 				<Profile onClick={logOutUser}>
 					<Image src={`/mbti-avatars/${userDoc.type}-${userDoc.gender[0]}.png`} alt="Avatar"/>
 				</Profile>
-			)}
+			)} */}
 		</NavigationContainer>
 	);
 }

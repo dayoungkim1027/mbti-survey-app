@@ -11,7 +11,7 @@ import RelationshipPolls from './views/relationship-polls';
 import ChildcarePolls from './views/childcare-polls';
 import OccupationPolls from './views/occupation-polls';
 import OtherPolls from './views/other-polls';
-import GeminiPage from './views/ask-gemini';
+// import GeminiPage from './views/ask-gemini';
 
 const AppContainer = styled.div`
   overflow: scroll;
@@ -31,7 +31,7 @@ function App() {
         <Route path="/childcare" element={<ChildcarePolls/>}/>
         <Route path="/occupation" element={<OccupationPolls/>}/>
         <Route path="/others" element={<OtherPolls/>}/>
-        <Route path="/askGemini" element={<GeminiPage/>}/>
+        {/* <Route path="/askGemini" element={<GeminiPage/>}/> */}
       
       </Routes>
       

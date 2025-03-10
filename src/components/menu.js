@@ -13,6 +13,14 @@ const MenuContainer = styled.div`
 	top: 85px;;
 `
 
+const ExternalLink = styled.a`
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	border-bottom: 1px solid #ececec;
+	padding: 1rem;
+`
+
 export const MenuItems = [
 	{
 		title: '연애/결혼',
@@ -30,10 +38,10 @@ export const MenuItems = [
 		title: '아무거나',
 		path: '/others',
 	},
-	{
-		title: 'Ask Gemini',
-		path: '/askGemini'
-	}
+	// {
+	// 	title: 'Ask Gemini',
+	// 	path: '/askGemini'
+	// }
 ];
 
 
@@ -57,7 +65,8 @@ function Menu() {
 					{menu.title}
 				</Link>
 			))}
-
+			<ExternalLink href="https://dayoung-livid.vercel.app/askDeekay" rel="noreferrer" alt="homepage">Ask DeeKay</ExternalLink>
+			<ExternalLink href="https://dayoung-livid.vercel.app/" rel="noreferrer" alt="homepage">Dayoung's Portfolio</ExternalLink>
 		</MenuContainer>
 	)
 }
