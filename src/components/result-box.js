@@ -9,8 +9,8 @@ const ResultContainer = styled.div`
 
 const ButtonContainer = styled.div`
 	display: flex;
-  align-items: center;
-  justify-content: center;
+  	justify-content: end;
+    margin: 1rem;
 `
 
 const StatusContainer = styled.div`
@@ -46,7 +46,7 @@ function ResultBox({
 				<Link style={
 					{
 						'textDecoration': 'none',
-						'color': 'black'
+						'color': 'black',
 					}} key={pollData.id} to={`/polls/${pollData.id}/survey-results`} state={{ result: {data}, pollData: {pollData} }}>
 						See details
 					</Link>

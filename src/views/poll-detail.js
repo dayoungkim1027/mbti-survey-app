@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import summarizeBy from '../utils/summarizeBy';
 import { useLocation } from 'react-router-dom';
-import ResultDetail from '../components/result-detail'
+// import ResultDetail from '../components/result-detail'
 
 const DetailTitle = styled.h3`
 	font-size: 20px;
@@ -75,6 +75,10 @@ const InfoBlock = styled.div`
 	flex-direction: row;
 `
 
+// const ChartContainer = styled.div`
+// 	width: 80%;
+// `
+
 function PollDetail() {
 	const location = useLocation();
 	const { pollData, result } = location.state;
@@ -100,13 +104,14 @@ function PollDetail() {
 				</InfoBlock>
 			</SummaryContainer>
 
-			<TitleContainer>
+			{/* <TitleContainer>
 				<DetailTitle>
 					Survey Results
 				</DetailTitle>
-			</TitleContainer>
-			<ResultDetail summary={typeSummary} category={'type'}></ResultDetail>
-
+			</TitleContainer> */}
+			{/* <ChartContainer>
+				<ResultDetail style={{ 'width': '80%' }} summary={typeSummary} category={'type'}></ResultDetail>
+			</ChartContainer> */}
 
 
 			<>
